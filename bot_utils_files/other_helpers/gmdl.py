@@ -376,6 +376,7 @@ def user_input():
                 "Icelandic",
                 "Italian",
                 "Japanese",
+                "Malayalam",
                 "Korean",
                 "Latvian",
                 "Lithuanian",
@@ -846,6 +847,7 @@ class googleimagesdownload:
                 "Russian": "lang_ru",
                 "Spanish": "lang_es",
                 "Swedish": "lang_sv",
+                "Malayalam": "lang_ml",
                 "Turkish": "lang_tr",
             }
             lang_url = lang + lang_param[arguments["language"]]
