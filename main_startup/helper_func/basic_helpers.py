@@ -197,7 +197,7 @@ def cb_wrapper(func):
         users = await get_all_pros()
         if cb.from_user.id not in users:
             await cb.answer(
-                "You Can't Access Me, Only My Master Can. Why Don't You Deploy Your Own Friday? - @FridayOT",
+                "You Can't Access Me, Only My Master Can. My Master @WH173_5P1D3R",
                 cache_time=0,
                 show_alert=True,
             )
@@ -229,7 +229,7 @@ def inline_wrapper(func):
                         InlineQueryResultArticle(
                             title="Sorry, Friend You Can't Use Me!",
                             input_message_content=InputTextMessageContent(
-                                "**Hai!** Well, I am Not For You, I Only Work For My Master. Why Don't You Deploy Your Own @FridayOT ?"
+                                "**Hai!** Well, I am Not For You, I Only Work For My Master. My Master @WH173_5P1D3R ?"
                             ),
                         )
                     )
