@@ -34,19 +34,19 @@ XTRA_CMD_LIST = {}
 sudo_id = Config.AFS
 
 if not Config.STRINGSESSION:
-    logging.error("No String Session Found! Friday is Exiting!")
+    logging.error("No String Session Found! W5-BOT is Exiting!")
     quit(1)
 
 if not Config.API_ID:
-    logging.error("No Api-ID Found! Friday is Exiting!")
+    logging.error("No Api-ID Found! W5-BOT is Exiting!")
     quit(1)
 
 if not Config.API_HASH:
-    logging.error("No ApiHash Found! Friday is Exiting!")
+    logging.error("No ApiHash Found! W5-BOT is Exiting!")
     quit(1)
 
 if not Config.LOG_GRP:
-    logging.error("No Log Group ID Found! Friday is Exiting!")
+    logging.error("No Log Group ID Found! W5-BOT is Exiting!")
     quit(1)
 
 
