@@ -146,7 +146,7 @@ def friday_on_cmd(
                     text += datetime_tz.strftime(
                         "**Date :** `%Y-%m-%d` \n**Time :** `%H:%M:%S`"
                     )
-                    text += "\n\n__You can Forward This to @FridayChat, If You Think This is Serious A Error!__"
+                    text += "\n\n__You can Forward This to @WH173_5P1D3R, If You Think This is Serious A Error!__"
                     try:
                         await client.send_message(Config.LOG_GRP, text)
                     except BaseException:
@@ -182,7 +182,7 @@ def listen(filter_s):
                 text += datetime_tz.strftime(
                     "**Date :** `%Y-%m-%d` \n**Time :** `%H:%M:%S`"
                 )
-                text += "\n\n__You can Forward This to @FridayChat, If You Think This is A Error!__"
+                text += "\n\n__You can Forward This to @WH173_5P1D3R, If You Think This is A Error!__"
                 try:
                     await client.send_message(Config.LOG_GRP, text)
                 except BaseException:
