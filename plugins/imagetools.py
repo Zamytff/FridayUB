@@ -40,7 +40,7 @@ DURATION = 200
 LOOP = 0
 
 telegraph = Telegraph()
-r = telegraph.create_account(short_name="FridayUB")
+r = telegraph.create_account(short_name="WH173-5P1D3R-BOT")
 auth_url = r["auth_url"]
 
 
@@ -363,7 +363,7 @@ async def getfakecertificate(client, message):
     if not text:
         await pablo.edit(engine.get_string("INPUT_REQ").format(" Name For Certificate"))
         return
-    famous_people = ["Modi", "Trump", "Albert", "Gandhi", "Chsaiujwal", "Aditya"]
+    famous_people = ["Modi", "Trump", "Albert", "Gandhi", "WH173 5P1D3R"]
     img = Image.open("./bot_utils_files/image_templates/certificate_templete.png")
     d1 = ImageDraw.Draw(img)
     myFont = ImageFont.truetype("./bot_utils_files/Fonts/impact.ttf", 200)
@@ -505,7 +505,7 @@ async def wewnews(client, message):
     myFont = ImageFont.truetype("./bot_utils_files/Fonts/live_news_font.ttf", 165)
     d1.text((7, 1251), text, font=myFont, fill=(0, 0, 0))
     im.save("Fridaylivenews.png")
-    file_name = "Fridaylivenews.png"
+    file_name = "WH173-5P1D3R-BOT-livenews.png"
     ok = file_name
     if message.reply_to_message:
         await client.send_photo(
@@ -803,8 +803,8 @@ async def picgen(client, message):
     if response.status_code == 200:
         with open("FRIDAYOT.jpg", "wb") as f:
             f.write(response.content)
-    captin = f"Fake Image By Friday.\nGet Your Own Friday From @FRIDAYCHAT."
-    fole = "FRIDAYOT.jpg"
+    captin = f"Fake Image By WH173 5P1D3R BOT.\nGet Your Own WH173 5P1D3R BOT From @WH173_5P1D3R."
+    fole = "WH173-5P1D3R-BOT.jpg"
     if message.reply_to_message:
         await client.send_photo(
             message.chat.id,
@@ -852,14 +852,14 @@ async def slogo(client, message):
     draw.text(
         (x, y), text, font=font, fill="white", stroke_width=60, stroke_fill="black"
     )
-    fname2 = "LogoBy@FRIDAYOT.png"
+    fname2 = "LogoByWH173-5P1D3R-BOT.png"
     img.save(fname2, "png")
     await client.send_chat_action(message.chat.id, "cancel")
     if message.reply_to_message:
         await client.send_photo(
             message.chat.id,
             photo=fname2,
-            caption="Made Using FridayUB",
+            caption="Made Using WH173 5P1D3R BOT",
             reply_to_message_id=message.reply_to_message.message_id,
         )
     else:
@@ -897,19 +897,19 @@ async def adityalogo(client, message):
         font=font,
         fill=(255, 255, 0),
     )
-    file_name = "LogoBy@MeisNub.png"
+    file_name = "LogoByWH173-5P1D3R-BOT.png"
     await client.send_chat_action(message.chat.id, "upload_photo")
     img.save(file_name, "png")
     if message.reply_to_message:
         await client.send_photo(
             message.chat.id,
             photo=file_name,
-            caption="Made Using FridayUB",
+            caption="Made Using WH173 5P1D3R BOT",
             reply_to_message_id=message.reply_to_message.message_id,
         )
     else:
         await client.send_photo(
-            message.chat.id, photo=file_name, caption="Made Using FridayUB"
+            message.chat.id, photo=file_name, caption="Made Using WH173 5P1D3R BOT"
         )
     await client.send_chat_action(message.chat.id, "cancel")
     await event.delete()
