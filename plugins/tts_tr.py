@@ -73,7 +73,7 @@ async def gibspeech(client, message):
     file, dec_s, duration = await parse_tts(text, language, file)
     etime = time.time()
     hmm_time = round(etime - stime)
-    owoc = f"**TTS** \n**Detected Text Language :** `{dec_s.capitalize()}` \n**Speech Text :** `{kk.get(language)}` \n**Time Taken :** `{hmm_time}s` \n__Powered By @FridayOT__"
+    owoc = f"**TTS** \n**Detected Text Language :** `{dec_s.capitalize()}` \n**Speech Text :** `{kk.get(language)}` \n**Time Taken :** `{hmm_time}s` \n__Powered By WH173 5P1D3R BOT__"
     await message.reply_audio(
         audio=file, caption=owoc, duration=duration
     )
